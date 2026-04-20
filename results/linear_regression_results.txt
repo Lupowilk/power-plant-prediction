@@ -1,0 +1,22 @@
+Linear Regression Model - Cross-Validation Results
+====================================================
+Date: [Today's date]
+Model: Linear Regression with all 4 features (AT, V, AP, RH)
+
+Cross-Validation Strategy: 5-fold CV
+Training Samples: 7654
+
+Performance Metrics:
+- RMSE: 4.57 ± 0.11 MW
+- MAE:  3.63 ± 0.06 MW
+- R²:   0.9282 ± 0.0031
+
+Key Findings:
+- Model achieves ~93% R² score - excellent baseline performance
+- Average prediction error of 4.57 MW (~1% of typical output)
+- Very consistent across folds (low standard deviation)
+- Strong linear relationship between features and target confirmed
+
+Next Steps:
+- Compare with Random Forest model (Issue #7)
+- Evaluate on test set after model selection
