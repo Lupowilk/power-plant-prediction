@@ -1,0 +1,29 @@
+Random Forest Model - Cross-Validation Results
+====================================================
+Date: [Today's date]
+Model: Random Forest Regressor with 100 trees
+Features: All 4 features (AT, V, AP, RH)
+
+Hyperparameters:
+- n_estimators: 100
+- random_state: 42
+- n_jobs: -1 (use all CPU cores)
+
+Cross-Validation Strategy: 5-fold CV
+Training Samples: 7654
+
+Performance Metrics:
+- RMSE: 3.46 ± 0.15 MW
+- MAE:  2.48 ± 0.07 MW
+- R²:   0.9588 ± 0.0033
+
+Key Findings:
+- Significantly outperforms Linear Regression baseline
+- 24% improvement in RMSE (4.57 → 3.46 MW)
+- 32% improvement in MAE (3.63 → 2.48 MW)
+- R² increased from 92.82% to 95.88%
+- Random Forest captures non-linear relationships better
+
+Next Steps:
+- Select Random Forest as final model
+- Evaluate on test set (Issue #9)

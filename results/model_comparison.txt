@@ -1,0 +1,21 @@
+Model Comparison Summary
+====================================================
+
+Linear Regression vs Random Forest
+Cross-Validation Results (5-fold, 7654 training samples)
+
+Metric          | Linear Regression | Random Forest | Improvement
+----------------|-------------------|---------------|-------------
+RMSE (MW)       | 4.57 ± 0.11      | 3.46 ± 0.15   | -24.3%
+MAE (MW)        | 3.63 ± 0.06      | 2.48 ± 0.07   | -31.7%
+R² Score        | 0.9282 ± 0.0031  | 0.9588 ± 0.0033| +3.3%
+
+Winner: Random Forest
+
+Analysis:
+- Random Forest captures non-linear patterns better
+- Lower prediction errors across all metrics
+- More complex model but significantly better performance
+- 3.46 MW average error = <1% of typical output (450 MW)
+
+Decision: Select Random Forest as final model for test set evaluation
